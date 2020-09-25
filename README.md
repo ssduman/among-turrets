@@ -23,5 +23,33 @@
   * WASD or arrows to move, space to fire
 * For mobile:
   * Use joystick
+
+<table>
+    <tr>
+        <td align="center">
+            <img src="https://github.com/perought/among-turrets/blob/master/test/menu.jpg" alt="menu" width="384" height="216">
+            <br/>
+            <i> main menu <i>
+        </td>
+        <td align="center">
+            <img src="https://github.com/perought/among-turrets/blob/master/test/dialogue.jpg" alt="dialogue" width="384" height="216">
+            <br/>
+            <i> dialogue <i>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <img src="https://github.com/perought/among-turrets/blob/master/test/desktop-gameplay.jpg" alt="desktop-gameplay" width="384" height="216">
+            <br/>
+            <i> desktop gameplay <i>
+        </td>
+        <td align="center">
+            <img src="https://github.com/perought/among-turrets/blob/master/test/mobile-gameplay.jpg" alt="mobile-gameplay" width="384" height="216">
+            <br/>
+            <i> mobile gameplay <i>
+        </td>
+    </tr>
+</table>
+
 ### Bugs: ###
 * Player can fire after death
