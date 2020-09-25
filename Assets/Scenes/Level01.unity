@@ -1801,7 +1801,7 @@ PrefabInstance:
     - target: {fileID: 1140148973169213027, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.005171776
+      value: -0.0051727295
       objectReference: {fileID: 0}
     - target: {fileID: 1140148973169213052, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
@@ -51110,12 +51110,12 @@ PrefabInstance:
     - target: {fileID: 1140148973169213027, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.0051727295
+      value: -0.005168915
       objectReference: {fileID: 0}
     - target: {fileID: 1140148973169213027, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 1.3127155
+      value: 1.312716
       objectReference: {fileID: 0}
     - target: {fileID: 1140148973169213052, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
@@ -55347,8 +55347,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -55513,7 +55513,12 @@ PrefabInstance:
     - target: {fileID: 1140148973169213027, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.005168915
+      value: -0.0051727295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140148973169213027, guid: f6595923f8acc2e4da91273dca34f70b,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 1.3127155
       objectReference: {fileID: 0}
     - target: {fileID: 1140148973169213052, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
@@ -55684,6 +55689,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1140148973169213027, guid: f6595923f8acc2e4da91273dca34f70b,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.005168915
+      objectReference: {fileID: 0}
     - target: {fileID: 1140148973169213052, guid: f6595923f8acc2e4da91273dca34f70b,
         type: 3}
       propertyPath: player
@@ -56306,8 +56316,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
