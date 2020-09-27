@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour {
 			player.TakeDamage(playerDamage);
 		}
 
-		if (fromTurret && player != null || !fromTurret && turret != null) {
+		if ((fromTurret && player != null || !fromTurret && turret != null) && player && player.health > 0) {
 			Destroy(gameObject);
 			Instantiate(impactEffect, transform.position, transform.rotation);
 		}

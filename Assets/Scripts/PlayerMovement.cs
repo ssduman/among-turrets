@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 	private bool mobile = false;
 	private bool isAiming = false;
 	private bool joystickSelection = false;
+	private bool isDead = false;
 
 	public int health = 100;
 	public bool isGrounded = false;
@@ -122,11 +123,12 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void TakeDamage(int damage) {
 		health -= damage;
-		if (health <= 0f) {
+		if (health <= 0f && !isDead) {
+			isDead = true;
 			animator.SetBool("Dead", true);
 			AudioManager.Play("dead");
 		}
-		else {
+		else if (!isDead) {
 			AudioManager.Play("hurt");
 		}
 	}

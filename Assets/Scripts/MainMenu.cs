@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour {
 		int pref = UseJoystick == true ? 1 : 0;
 		PlayerPrefs.SetInt("UseJoystick", pref);
 		if (!UseJoystick) {
-			JoystickText.text = "Use Joystick";
+			JoystickText.text = "Use Touchscreen";
 		}
 		else {
 			JoystickText.text = "Use Keyboard";
