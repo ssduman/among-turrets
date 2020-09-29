@@ -49,3 +49,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Computer
+    uniqueID: 2373259013
+    locked: 0
+  - name: Payer
+    uniqueID: 4041544741
+    locked: 0

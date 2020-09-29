@@ -14,6 +14,8 @@ public class DialogueTrigger : MonoBehaviour {
 	private void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.collider.CompareTag("PlayerFoot")) {
 			FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+			PlayerMovement playerScript = player.GetComponent<PlayerMovement>();
+			playerScript.speed = 0f;
 		}
 	}
 

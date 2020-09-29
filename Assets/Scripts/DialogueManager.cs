@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public Canvas canvas;
 	public Animator animator;
+	public PlayerMovement playerScript;
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 
@@ -60,5 +61,7 @@ public class DialogueManager : MonoBehaviour {
 		canvas.enabled = false;
 
 		animator.SetBool("isOpen", false);
+
+		playerScript.speed = 5f;
 	}
 }

@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour {
 	private Vector3 previous = Vector3.zero;
 	private Vector3 velocity;
 
-	public float bulletSpeed = 5f;
+	public float bulletSpeed = 6f;
 
 	public PlayerMovement player;
 	public Transform firePoint;
@@ -34,9 +34,9 @@ public class Weapon : MonoBehaviour {
 		if (animator.GetBool("Aim") == false) {
 			CancelInvoke("AimFalse");
 			animator.SetBool("Aim", true);
-			if (player.speed == 5f) {
-				player.speed /= 2;
-			}
+			//if (player.speed == 5f) {
+			//	player.speed /= 2;
+			//}
 			Invoke("AimFalse", 2f);
 		}
 
@@ -75,9 +75,9 @@ public class Weapon : MonoBehaviour {
 	}
 
 	private void AimFalse() {
-		if (player.speed == 2.5f) {
-			player.speed *= 2;
-		}
+		//if (player.speed == 2.5f) {
+		//	player.speed *= 2;
+		//}
 		animator.SetBool("Aim", false);
 	}
 }

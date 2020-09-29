@@ -14,6 +14,8 @@ public class Bullet : MonoBehaviour {
 		Turret turret = collision.GetComponent<Turret>();
 		if (turret != null && !fromTurret) {
 			turret.TakeDamage(damage);
+			Destroy(gameObject);
+			Instantiate(impactEffect, transform.position, transform.rotation);
 		}
 
 		PlayerMovement player = collision.GetComponent<PlayerMovement>();

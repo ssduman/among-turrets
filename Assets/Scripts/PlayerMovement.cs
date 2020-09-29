@@ -2,11 +2,11 @@
 
 public class PlayerMovement : MonoBehaviour {
 
-	private Vector2 movement;
 	private bool mobile = false;
 	private bool isAiming = false;
 	private bool joystickSelection = false;
 	private bool isDead = false;
+	private Vector2 movement;
 
 	public int health = 100;
 	public bool isGrounded = false;
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
 		movement = new Vector3(horizontalMove, verticalMove);
 
 		float Speed = Mathf.Max(Mathf.Abs(movement.x), Mathf.Abs(movement.y));
-		if (movement != Vector2.zero) {
+		if (movement != Vector2.zero && speed > 0f) {
 			animator.SetFloat("Horizontal", horizontalMove);
 			animator.SetFloat("Vertical", verticalMove);
 		}
@@ -69,16 +69,16 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetMouseButtonDown(1) && !isAiming) {
 			animator.SetBool("Aim", true);
 			isAiming = true;
-			if (speed == 5f) {
-				speed /= 2;
-			}
+			//if (speed == 5f) {
+			//	speed /= 2;
+			//}
 		}
 		else if (Input.GetMouseButtonDown(1) && isAiming) {
 			animator.SetBool("Aim", false);
 			isAiming = false;
-			if (speed == 2.5f) {
-				speed *= 2;
-			}
+			//if (speed == 2.5f) {
+			//	speed *= 2;
+			//}
 		}
 	}
 
@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (health > 0) {
 			// transform.position += new Vector3(movement.x, movement.y, 0f) * Time.deltaTime * speed;
 			rg.MovePosition(rg.position + movement * speed * Time.fixedDeltaTime);
-
+			movement = movement.normalized;
 			if (movement != Vector2.zero) {
 				AudioManager.Play("run");
 			}
