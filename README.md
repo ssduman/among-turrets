@@ -17,7 +17,7 @@
   * [Walls](https://jakeyb.itch.io/steel-16x16-tileset)
   * [Effects](https://ansimuz.itch.io/warped-caves)
 ## Play: ##
-* https://perought.github.io/pages-demo/
+* https://ssduman.github.io/pages-demo/
 ## Control: ##
 * For desktop: 
   * WASD or arrows to move, space to fire
