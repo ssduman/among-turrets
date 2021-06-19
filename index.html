@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us" class="notranslate" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Among Turrets</title>
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      console.log = function () {};
+      console.warn = function () {};
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/Builds.json",
+        { onProgress: UnityProgress }
+      );
+      console.log = function () {};
+      console.warn = function () {};
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+    </div>
+  </body>
+</html>
