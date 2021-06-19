@@ -1,5 +1,5 @@
 # Among Turrets
-* A 2D Unity game
+* A 2D Unity game: https://ssduman.github.io/among-turrets/
 ## Specifications: ##
 * Basic 2D game.
 ## Dependencies: ##
@@ -17,7 +17,7 @@
   * [Walls](https://jakeyb.itch.io/steel-16x16-tileset)
   * [Effects](https://ansimuz.itch.io/warped-caves)
 ## Play: ##
-* https://ssduman.github.io/pages-demo/
+* https://ssduman.github.io/among-turrets/
 ## Control: ##
 * For desktop: 
   * WASD or arrows to move, space to fire
